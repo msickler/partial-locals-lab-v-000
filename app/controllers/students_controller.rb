@@ -23,9 +23,9 @@ class StudentsController < ApplicationController
   def index
     if params[:p]
       @students = Student.search(params[:p])
-    else 
+    else
       @students = Student.all
-    end 
+    end
   end
 
   def student_params
